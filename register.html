@@ -40,7 +40,31 @@
           <h2>Overskrift</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset>
+            <div>
+              <h2>Hvad er gået galt?</h2>
+              <label for="driver">Flygtet get-away driver</label> <input type="radio" name="hvad" value="driver" />
+              <label for="politi">Politiet er ankommet/er på vej</label>
+              <input type="radio" name="hvad" value="politi" />
+              <label for="forraadt">Du er blevet forrådt</label>
+              <input type="radio" name="hvad" value="forraadt" />
+            </div>
+            <div>
+              <h2>Uddyb din situation</h2>
+              <input type="text" rows="10" name="uddyb" />
+            </div>
+            <div>
+              <h2>Er du i fare?</h2>
+              <label for="check"> <input id="check" type="checkbox" name="check" /> Ja </label>
+            </div>
+            <div>
+              <label for="advokat">Indsæt evt. telefon til din advokat:</label>
+              <input id="advokat" name="advokat" type="tel" />
+            </div>
+          </fieldset>
+          <button>Submit</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
