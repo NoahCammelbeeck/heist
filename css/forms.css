@@ -1,5 +1,6 @@
 #webform {
   background-color: var(--form-background-color);
+  width: 300px;
 }
 
 #form-section,

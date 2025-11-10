@@ -19,6 +19,11 @@ main {
 #instruction main {
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
+
+.webform {
+  place-content: center;
+}
+
 /* LAYOUT FOR HEADER AND FOOTER */
 footer {
   display: grid;
@@ -26,7 +31,8 @@ footer {
 }
 header nav,
 footer nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
   justify-content: space-between;
   align-items: center;
 }
@@ -38,8 +44,8 @@ nav ul {
   justify-content: flex-end;
 }
 header ul {
-  height: 100%;
-  width: clamp(175px, 50%, 300px);
+  width: auto;
+  justify-content: center;
 }
 footer ul {
   flex-direction: column;

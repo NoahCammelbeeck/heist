@@ -11,8 +11,8 @@ header {
 #main-disclamer {
   height: 225px;
   background-color: var(--color-head-bg);
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   padding-left: 2rem;
   padding-bottom: 2%;
@@ -49,12 +49,12 @@ h1 {
 #instruction p {
   grid-column: 1/-1;
   margin-bottom: 20px;
-  font-size: var(--font-h2-size);
+  font-size: 16px;
   line-height: 1.5rem;
 }
 
 .sub {
-  font-size: var(--font-sub1-size);
+  font-size: 38px;
   font-weight: var(--font-weight-light);
   color: var(--color-text-inverted);
 }
@@ -99,6 +99,12 @@ nav a {
   height: 3.6rem;
 }
 
+.heisthelp {
+  width: 100px;
+  place-self: inherit;
+  margin: 0 50px 8px 50px;
+}
+
 #logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
@@ -135,7 +141,84 @@ input {
   display: block;
 }
 
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.75ch;
+}
+
+.udfyld {
+  display: grid;
+  gap: 0.5em;
+  margin: 20px 20px 20px 10px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
+  padding: 7px;
+  background-color: rgb(251, 176, 59);
+  border: 1px black solid;
+  transition: 0.2s;
+}
+
+.udfyld:hover {
+  background-color: rgb(241, 140, 50);
+}
+
+.opsummering {
+  display: grid;
+  gap: 0.5em;
+  margin: 20px 20px 20px 10px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
+  padding: 7px;
+  background-color: rgb(251, 176, 59);
+  border: 1px black solid;
+}
+
+p{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form {
+  border: 2px black solid;
+  width: 50%;
+  border-radius: 7px;
+  font-weight: bold;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
+  display: grid;
+  padding: 1rlh;
+  gap: 1.5em;
+  background-color: rgb(241, 140, 50);
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: rgb(251, 176, 59);
+  cursor: pointer;
+  width: 210px;
+  transition: 0.25s;
+}
+input {
+  border-radius: 7px;
+  border: black 2px solid;
+  padding: 2px;
+  /* box-shadow: 2px 2px rgba(0, 0, 0, 0.32); */
+  /* width: 100%; */
+  /* border, border-radius, padding, evt. box-shadow */
+}
+
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+textarea {
+  border: black;
 }
