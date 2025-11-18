@@ -1,4 +1,5 @@
 html {
+  interpolate-size: allow-keywords;
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -65,6 +66,11 @@ h2 {
 
 h3 {
   font-size: var(--headline3-size);
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 main > h1 {
@@ -174,7 +180,7 @@ label:has(input) {
   border: 1px black solid;
 }
 
-p{
+p {
   font-size: 16px;
   font-weight: bold;
 }
@@ -221,4 +227,23 @@ footer a {
 
 textarea {
   border: black;
+}
+
+summary {
+  font-size: 24px;
+}
+
+::marker {
+  content: none;
+}
+
+.logo2 {
+  width: 50%;
+  margin-top: 1em;
+}
+
+.åbner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

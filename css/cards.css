@@ -6,6 +6,11 @@
   padding: 40px 0 40px 20px;
   border-radius: var(--border-radius);
   height: minmax(200px, min-content);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: .3s;
+    &:hover {
+    background-color: rgb(161, 131, 187);
+  }
 }
 .daily_text {
   display: grid;
@@ -39,6 +44,7 @@
   padding: 1rem 0;
   height: minmax(300px, min-content);
   border-radius: 7px;
+  margin: 2px;
 }
 .news_card:nth-child(2n) {
   background-color: var(--color-news-bg-inverted);
@@ -93,4 +99,9 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+.logo2{
+  width: 200px;
+  justify-self: center;
 }
