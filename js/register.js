@@ -27,18 +27,18 @@ function handleSubmit(event) {
   checkOutput.textContent = check;
   telOutput.textContent = tel;
 
-  if(check === "on"){
-  udrykning();
-}
+  if (check === "on") {
+    udrykning();
+  }
 
   form.reset();
 }
+const audioElement = new Audio("../audio/siren.wav");
 
 form.addEventListener("invalid", cancelPopup, true);
 form.addEventListener("submit", handleSubmit);
 
-
-
-function udrykning (){
-  alert("Du har svaret du er i fare! Politiet er på vej til din nuværende lokation.")
+function udrykning() {
+  audioElement.play();
+  alert("Du har svaret du er i fare! Politiet er på vej til din nuværende lokation.");
 }

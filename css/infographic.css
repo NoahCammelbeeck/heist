@@ -52,6 +52,12 @@
   border: 3px solid black;
 }
 
-svg:hover {
-  cursor: pointer;
+.driver,
+.forraadt,
+.politi {
+  transition: 0.4s;
+  &:hover {
+    filter: grayscale(1);
+    cursor: pointer;
+  }
 }
