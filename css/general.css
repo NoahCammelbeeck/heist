@@ -85,6 +85,7 @@ header > nav {
 
 nav ul {
   list-style: none;
+  place-items: inherit;
 }
 
 a {
@@ -248,3 +249,35 @@ summary {
   align-items: center;
 }
 
+[role="switch"]{
+  --h: 2rem;
+  --w: 4rem;
+  font: inherit;
+  appearance: none;
+  height: var(--h);
+  width: var(--w);
+  background: rgb(1, 108, 166);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+  
+ [role="switch"]::before {
+   content:"";
+   display: block;
+   padding: 0.5px;
+   height: 100%;
+   aspect-ratio: 1;
+   background: rgb(241, 140, 50) content-box;
+   border-radius:inherit;
+   align-items: center;
+   transition: 0.3s;
+   
+  }
+
+[role="switch"]:checked::before{
+  translate: calc(var(--w) - var(--h));
+  background: rgb(161, 131, 187) content-box;
+
+  
+}
