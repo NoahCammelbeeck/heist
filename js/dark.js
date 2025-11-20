@@ -10,9 +10,18 @@
 const html = document.querySelector("html");
 const toggleSwitch = document.querySelector("#theme-toggle");
 
-function toggleSwitchFn(){
+function toggleSwitchFn() {
   const isDark = event.target.checked === true;
-  html.classList.toggle("dark", isDark)
+  html.classList.toggle("dark", isDark);
+  localStorage.setItem("isDarkMode", isDark);
 }
 
-toggleSwitch?.addEventListener("change", toggleSwitchFn)
+toggleSwitch?.addEventListener("change", toggleSwitchFn);
+
+function getSavedTheme() {
+  const isDark = localStorage.getItem("isDarkMode") === "true";
+  html.classList.toggle("dark", isDark);
+  toggleSwitch.checked = isDark;
+}
+
+getSavedTheme();

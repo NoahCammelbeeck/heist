@@ -1,7 +1,7 @@
 document.querySelector("#Get_away_driver").addEventListener("click", updateInfoboxDriver);
 
 function updateInfoboxDriver() {
-  document.querySelector("h2").innerHTML = "Get-Away Driver er kørt";
+  document.querySelector("h2").innerHTML = "Din get-away driver er kørt";
   document.querySelector("#efficiency").innerHTML = "<h2>Situationen</h2> <p>Du har ingen til at køre dig fra gerningstedet</p>";
   document.querySelector("#requirement").innerHTML =
     "<h2>Løsning</h2><p>Ring til en taxi, Uber eller overvej offentlig transport, hvis det er tilgængeligt</p>";

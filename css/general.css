@@ -71,6 +71,11 @@ h3 {
 
 h4 {
   font-size: 24px;
+  margin-bottom: 9px;
+}
+
+h5 {
+  font-size: 16 px;
 }
 
 main > h1 {
@@ -249,7 +254,7 @@ summary {
   align-items: center;
 }
 
-[role="switch"]{
+[role="switch"] {
   --h: 2rem;
   --w: 4rem;
   font: inherit;
@@ -261,23 +266,20 @@ summary {
   border-radius: 14px;
   cursor: pointer;
 }
-  
- [role="switch"]::before {
-   content:"";
-   display: block;
-   padding: 0.5px;
-   height: 100%;
-   aspect-ratio: 1;
-   background: rgb(241, 140, 50) content-box;
-   border-radius:inherit;
-   align-items: center;
-   transition: 0.3s;
-   
-  }
 
-[role="switch"]:checked::before{
+[role="switch"]::before {
+  content: "";
+  display: block;
+  padding: 0.5px;
+  height: 100%;
+  aspect-ratio: 1;
+  background: rgb(241, 140, 50) content-box;
+  border-radius: inherit;
+  align-items: center;
+  transition: 0.3s;
+}
+
+[role="switch"]:checked::before {
   translate: calc(var(--w) - var(--h));
   background: rgb(161, 131, 187) content-box;
-
-  
 }
