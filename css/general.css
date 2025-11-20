@@ -160,7 +160,7 @@ label:has(input) {
   border-radius: 7px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
   padding: 7px;
-  background-color: rgb(251, 176, 59);
+  background-color: var(--color-logotype-bg);
   border: 1px black solid;
   transition: 0.2s;
 }
@@ -176,7 +176,7 @@ label:has(input) {
   border-radius: 7px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
   padding: 7px;
-  background-color: rgb(251, 176, 59);
+  background-color: var(--color-logotype-bg);
   border: 1px black solid;
 }
 
@@ -202,11 +202,11 @@ fieldset {
 }
 
 button {
-  color: white;
-  border: 1px solid black;
+  color: var(--color-text);
+  border: none;
   border-radius: 10px;
   padding: 7px;
-  background-color: rgb(251, 176, 59);
+  background-color: var(--color-link-bg);
   cursor: pointer;
   width: 210px;
   transition: 0.25s;
@@ -247,3 +247,4 @@ summary {
   flex-direction: row;
   align-items: center;
 }
+

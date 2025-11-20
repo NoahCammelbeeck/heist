@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light dark;
   /* Colours */
   --color-bg: rgb(251, 176, 59); /* page background /*
 
@@ -52,6 +53,69 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
+  
+
+  /* Infographics */
+    --color-info-bg: rgb(241, 140, 50);
+  --color-infobox-1-bg: rgb(2, 124, 192);
+  --color-infobox-2-bg: rgb(161, 131, 187);
+}
+
+:root.dark {
+  color-scheme: light dark;
+  /* Colours */
+  --color-bg: rgb(68, 55, 79); /* page background /*
+
+  /* Header */
+  --color-head-bg: rgb(88, 72, 102);;
+
+  /* Logotype */
+  --color-logotype-bg: rgb(1, 108, 166);
+  --color-text-logotype:  #e7e7e7;
+  --font-logotype-size: 36px;
+
+  /* Global menu */
+  --color-menu-bg: rgb(108, 87, 126);
+  /* Links */
+  --color-link-bg: rgb(2, 124, 192);
+  --color-link-hover:  rgb(241, 140, 50); /* used */
+  --color-link-active: #99958f; /* used */
+  --border-radius-links: 37px;
+
+  /* Headlines og rubrik */
+  --font-h1-size: 48px;
+  --font-sub1-size: 48px;
+  --font-h2-size: 36px;
+  --font-h3-size: 32px;
+  --color-headline-bg:rgb(2, 124, 192);
+  --color-headline-text-page:  #e7e7e7ce;
+
+  /* Tekst */
+  --color-text:  #e7e7e7ce;;
+  --color-text-inverted:  #e7e7e7ce;
+
+  /*  Marginer */
+  --margin-head-bottom: 40px;
+
+  /* Borders */
+  --border-radius: 37px;
+
+  /* Cards */
+  --color-card-bg:  rgb(82, 67, 95);
+  --color-cta-card-bg: rgb(2, 124, 192);
+  /* news-cards */
+  --color-news-bg:  rgb(82, 67, 95);
+  --color-news-bg-inverted: #dbe2f5;
+  --color-cta-newscard-bg: rgb(2, 124, 192);
+  --color-cta-newscard-bg-inverted: #6f90eb;
+
+  /* Fonts */
+  --font-family-sans: "rubik";
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
   /* Text sizes */
   --logotype-size: 1rem;
   --headline1-size: 2rem;
@@ -63,7 +127,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: rgb(241, 140, 50);
+  --color-info-bg: rgb(110, 88, 128);
   --color-infobox-1-bg: rgb(2, 124, 192);
   --color-infobox-2-bg: rgb(161, 131, 187);
 }
