@@ -49,7 +49,7 @@
 
 .under {
   display: block;
-  border: 3px solid black;
+  margin-left: 100px;
 }
 
 .driver,
