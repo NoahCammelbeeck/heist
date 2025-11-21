@@ -1,5 +1,4 @@
 :root {
-  color-scheme: light dark;
   /* Colours */
   --color-bg: rgb(251, 176, 59); /* page background /*
 
@@ -7,7 +6,7 @@
   --color-head-bg: rgb(208, 19, 23);
 
   /* Logotype */
-  --color-logotype-bg: rgb(251, 176, 59);
+  --color-logotype-bg: rgb(246, 159, 20);
   --color-text-logotype: #ffffff;
   --font-logotype-size: 36px;
 
@@ -15,7 +14,7 @@
   --color-menu-bg: rgb(161, 131, 187);
   /* Links */
   --color-link-bg: rgb(2, 124, 192);
-  --color-link-hover:  rgb(241, 140, 50); /* used */
+  --color-link-hover: rgb(241, 140, 50); /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
@@ -53,10 +52,18 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  
+  /* Text sizes */
+  --logotype-size: 1rem;
+  --headline1-size: 2rem;
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --bodytext-size: 1rem;
+  --cta-text-size: 1rem;
+  --followup-text-size: 1rem;
+  --form-submit-size: 1rem;
 
   /* Infographics */
-    --color-info-bg: rgb(241, 140, 50);
+  --color-info-bg: rgb(241, 140, 50);
   --color-infobox-1-bg: rgb(2, 124, 192);
   --color-infobox-2-bg: rgb(161, 131, 187);
 }
@@ -67,18 +74,18 @@
   --color-bg: rgb(68, 55, 79); /* page background /*
 
   /* Header */
-  --color-head-bg: rgb(88, 72, 102);;
+  --color-head-bg: rgb(88, 72, 102);
 
   /* Logotype */
   --color-logotype-bg: rgb(1, 108, 166);
-  --color-text-logotype:  #e7e7e7;
+  --color-text-logotype: #e7e7e7;
   --font-logotype-size: 36px;
 
   /* Global menu */
   --color-menu-bg: rgb(108, 87, 126);
   /* Links */
   --color-link-bg: rgb(2, 124, 192);
-  --color-link-hover:  rgb(241, 140, 50); /* used */
+  --color-link-hover: rgb(241, 140, 50); /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
@@ -87,12 +94,12 @@
   --font-sub1-size: 48px;
   --font-h2-size: 36px;
   --font-h3-size: 32px;
-  --color-headline-bg:rgb(2, 124, 192);
-  --color-headline-text-page:  #e7e7e7ce;
+  --color-headline-bg: rgb(2, 124, 192);
+  --color-headline-text-page: #e7e7e7ce;
 
   /* Tekst */
-  --color-text:  #e7e7e7ce;;
-  --color-text-inverted:  #e7e7e7ce;
+  --color-text: #e7e7e7ce;
+  --color-text-inverted: #e7e7e7ce;
 
   /*  Marginer */
   --margin-head-bottom: 40px;
@@ -101,10 +108,10 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg:  rgb(82, 67, 95);
+  --color-card-bg: rgb(82, 67, 95);
   --color-cta-card-bg: rgb(2, 124, 192);
   /* news-cards */
-  --color-news-bg:  rgb(82, 67, 95);
+  --color-news-bg: rgb(82, 67, 95);
   --color-news-bg-inverted: #dbe2f5;
   --color-cta-newscard-bg: rgb(2, 124, 192);
   --color-cta-newscard-bg-inverted: #6f90eb;
